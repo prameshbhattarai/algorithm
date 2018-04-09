@@ -36,9 +36,9 @@ public class CombinationSum {
 
                 back(result, innerList, a, remaining - a[i], i);
 
-                System.out.println("wheb remaining is less than 0, then this part will be called ");
+                System.out.println("when remaining is less than 0, then this part will be called ");
                 innerList.forEach(System.out::print);
-                System.out.println(" size of innerlist " + innerList.size());
+                System.out.println("\nsize of innerlist " + innerList.size());
 
                 innerList.remove(innerList.size()-1);
             }
