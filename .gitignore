@@ -1,8 +1,5 @@
 # Editors
 *.idea/
 
-# tmp files
-*.iml
-
 # output files
 *out/
