@@ -10,7 +10,7 @@ public class Memoization {
             if (lookup[n-1] != 0)
                 return lookup[n-1];
             else {
-                int fiboValue = recursiveFibo(n - 2) + recursiveFibo(n - 1);
+                int fiboValue = recursiveFiboWithMemoization(n - 2) + recursiveFiboWithMemoization(n - 1);
                 lookup[n-1] = fiboValue;
                 return fiboValue;
             }
@@ -40,7 +40,7 @@ public class Memoization {
     public static void main(String... args) {
         int[] series;
         long startTime, endTime;
-        int upTo = 20;
+        int upTo = 25;
 
         startTime = System.currentTimeMillis();
         series = Memoization.generateFiboSeries(upTo);
